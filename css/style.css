@@ -161,14 +161,16 @@ header{
 
 .filters,
 .filters li,
-.filters ul {
+.filters ul,
+.fa-info,
+.info_paragraph {
     display: flex;
     align-items: center;
 }
 
 .filters li {
     border: 2px solid var(--main-bg-color);
-    margin: 15px;
+    margin: 5px;
     padding: 5px;
     border-radius: 20px;
 }
@@ -183,19 +185,19 @@ header{
     padding: 5px;
 }
 
+.filters li:hover{
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
 .fa-info{
     border: 1px solid var(--filter-bg-color);
     border-radius: 50%;
     width: 25px;
     height: 25px;
-    display: flex;
-    align-items: center;
     justify-content: center;
     margin: 10px;
 }
 .info_paragraph{
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
 }
 
