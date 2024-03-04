@@ -91,15 +91,67 @@ header{
 } 
 
 .menu a:hover{
-    border-top: 3px solid #0065FC;
-    color: #0065FC;
+    border-top: 3px solid var(--main-color);;
+    color: var(--main-color);;
     padding-top: 20px;
 }
 
 /****** Form ***********/
 
-.form p{
+.formulaire p{
     margin-top: -15px;
+}
+.fa-location-dot{
+    color: black;
+}
+
+.formulaire form {
+    border : 2px solid var(--main-bg-color);
+    border-radius: 10px 12px 12px 10px;
+    display: flex;
+    width: fit-content;
+    height: 40px;
+    margin: 30px 30px 30px 0;
+}
+
+.formulaire form label {
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px 0 0 7px;
+    width: 45px;
+}
+
+.formulaire form button{
+    background-color: var(--main-color);
+    color: white;
+    border: 2px solid var(--main-color);
+    border-radius: 0 10px 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    width: 115px;
+    cursor:pointer;
+}
+
+.formulaire form button:active{
+    background-color:#1356bb;
+    border: 2px solid #1356bb;
+}
+.formulaire form ::placeholder{
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.formulaire form input[type="text"]{
+    width: 150px;
+    padding-left: 20px;
+    border: none;
+}
+
+.formulaire form input[type="text"]:focus::placeholder{
+    opacity: 0;
 }
 
 /****** Hebergements And Populaires ***********/
