@@ -21,6 +21,8 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 1024px;
+    margin: auto;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -127,13 +129,15 @@ header{
 }
 
 .formulaire form button{
+
     background-color: var(--main-color);
     color: white;
-    border: 2px solid var(--main-color);
+    border: solid 2px var(--main-color);
     border-radius: 0 10px 10px 0;
+    width: 115px;
     font-size: 16px;
     font-weight: 600;
-    width: 115px;
+    transform: scale(1.1);
     cursor:pointer;
 }
 
@@ -163,7 +167,7 @@ header{
 .filters li,
 .filters ul,
 .fa-info,
-.info_paragraph {
+.info-paragraph {
     display: flex;
     align-items: center;
 }
@@ -179,7 +183,7 @@ header{
     flex-wrap: wrap;
 } 
 
-.filters_pic{
+.filters-pic{
     padding-right: 5px;
     padding: 5px;
 }
@@ -197,7 +201,7 @@ header{
     justify-content: center;
     margin: 10px;
 }
-.info_paragraph{
+.info-paragraph{
     justify-content: flex-start;
 }
 
@@ -216,7 +220,7 @@ header{
 
 /****** Hebergements ***********/
 
-#hebergements_section {
+#hebergements-section {
     width: 65%;
 }
 
@@ -242,7 +246,7 @@ header{
 
 }
 
-.hebergements_cards{
+.hebergements-cards{
     background-color: white;
     width: 240px;
     height: 210px;
@@ -253,13 +257,13 @@ header{
 
 }
 
-.hebergements_cards .card-rating{
+.hebergements-cards .card-rating{
     padding-top: 5px;
 }
 
 /****** Populaires ***********/
 
-.populaires_section {
+.populaires-section {
     width: 32%;
 }
 
@@ -306,9 +310,9 @@ header{
 
 /****** Activités ***********/
 
-#activities_section{
+#activities-section{
     padding-top: 25px;
-    margin-left: 10px ;
+    margin-left: 0px ;
 }
 
 .activities{
@@ -317,13 +321,13 @@ header{
     
 }
 
-.activities_cards{
+.activities-cards{
     margin-top: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.activities_cards img{
+.activities-cards img{
     width: 100%;
     height: 385px;
     max-width: 300px;
@@ -333,7 +337,7 @@ header{
     border-radius: 20px 20px 0 0;
 }
 
-.activities_cards h3{
+.activities-cards h3{
     padding: 15px;
 }
 
