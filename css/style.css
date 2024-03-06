@@ -114,7 +114,7 @@ header{
     display: flex;
     width: fit-content;
     height: 40px;
-    margin: 30px 30px 0 0;
+    margin: 30px 30px 5px 0;
 }
 
 .formulaire form label {
@@ -188,6 +188,7 @@ header{
     background-color: var(--filter-bg-color);
     cursor: pointer;
 }
+
 .fa-info{
     border: 1px solid var(--filter-bg-color);
     border-radius: 50%;
@@ -215,7 +216,7 @@ header{
 
 /****** Hebergements ***********/
 
-.hebergements_section {
+#hebergements_section {
     width: 65%;
 }
 
@@ -305,13 +306,15 @@ header{
 
 /****** Activités ***********/
 
-.activities_section{
+#activities_section{
     padding-top: 25px;
+    margin-left: 10px ;
 }
 
 .activities{
     display: flex;
     gap: 40px;
+    
 }
 
 .activities_cards{
