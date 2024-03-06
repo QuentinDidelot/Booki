@@ -114,7 +114,7 @@ header{
     display: flex;
     width: fit-content;
     height: 40px;
-    margin: 30px 30px 30px 0;
+    margin: 30px 30px 0 0;
 }
 
 .formulaire form label {
@@ -332,6 +332,30 @@ header{
 
 .activities_cards h3{
     padding: 15px;
+}
+
+
+/*********** Footer *************/
+
+footer {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+
+footer section {
+    padding: 5px;
+}
+
+footer li{
+    margin-top: 20px;
+}
+
+footer ul{
+    padding-left: 0;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
