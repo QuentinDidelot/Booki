@@ -21,7 +21,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    min-width: 1024px;
     margin: auto;
     padding: 0 50px;
     box-sizing: border-box;
@@ -32,7 +31,7 @@ a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -69,24 +68,23 @@ li{
 
 /****** Header ***********/
 
-header{
+header {
+    height: 80px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
 }
 
-.logo{
+.logo {
     height: 30px;
-    margin-top: 10px;
-    padding-bottom: 50px;
+    align-self: center;
 }
 
-.menu{
+.menu {
     display: flex;
+    gap: 70px;
 }
 
-.menu li{
+.menu li {
     text-align: center;
     margin-right: 65px;
 }
@@ -95,18 +93,19 @@ header{
     padding: 30px;
 } 
 
-.menu a:hover{
-    border-top: 3px solid var(--main-color);;
-    color: var(--main-color);;
+.menu a:hover {
+    border-top: 3px solid var(--main-color);
+    color: var(--main-color);
     padding-top: 20px;
 }
 
 /****** Form ***********/
 
-.formulaire p{
+.formulaire p {
     margin-top: -15px;
 }
-.fa-location-dot{
+
+.fa-location-dot {
     color: black;
 }
 
@@ -141,23 +140,24 @@ header{
     cursor:pointer;
 }
 
-.formulaire form button:active{
+.formulaire form button:active {
     background-color:#1356bb;
     border: 2px solid #1356bb;
 }
-.formulaire form ::placeholder{
+
+.formulaire form ::placeholder {
     color: black;
     font-size: 16px;
     font-weight: 800;
 }
 
-.formulaire form input[type="text"]{
+.formulaire form input[type="text"] {
     width: 150px;
     padding-left: 20px;
     border: none;
 }
 
-.formulaire form input[type="text"]:focus::placeholder{
+.formulaire form input[type="text"]:focus::placeholder {
     opacity: 0;
 }
 
@@ -183,17 +183,17 @@ header{
     flex-wrap: wrap;
 } 
 
-.filters-pic{
+.filters-pic {
     padding-right: 5px;
     padding: 5px;
 }
 
-.filters li:hover{
+.filters li:hover {
     background-color: var(--filter-bg-color);
     cursor: pointer;
 }
 
-.fa-info{
+.fa-info {
     border: 1px solid var(--filter-bg-color);
     border-radius: 50%;
     width: 25px;
@@ -201,7 +201,7 @@ header{
     justify-content: center;
     margin: 10px;
 }
-.info-paragraph{
+.info-paragraph {
     justify-content: flex-start;
 }
 
@@ -224,18 +224,19 @@ header{
     width: 65%;
 }
 
-.hebergements{
+.hebergements {
     display: flex;
     flex-wrap: wrap;
     gap: 42px;
     margin: 30px 0;
 
 }
-.hebergements .card-content{
+
+.hebergements .card-content {
     margin: 10px;
 }
 
-.hebergements img{
+.hebergements img {
     border-radius: 20px 20px 0 0;
     width: 95%;
     height: 100px;
@@ -246,7 +247,7 @@ header{
 
 }
 
-.hebergements-cards{
+.hebergements-cards {
     background-color: white;
     width: 240px;
     height: 210px;
@@ -257,7 +258,7 @@ header{
 
 }
 
-.hebergements-cards .card-rating{
+.hebergements-cards .card-rating {
     padding-top: 5px;
 }
 
@@ -310,24 +311,24 @@ header{
 
 /****** Activités ***********/
 
-#activities-section{
+#activities-section {
     padding-top: 25px;
-    margin-left: 0px ;
+    margin-left: 0px;
 }
 
-.activities{
+.activities {
     display: flex;
     gap: 40px;
     
 }
 
-.activities-cards{
+.activities-cards {
     margin-top: 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.activities-cards img{
+.activities-cards img {
     width: 100%;
     height: 385px;
     max-width: 300px;
@@ -337,7 +338,7 @@ header{
     border-radius: 20px 20px 0 0;
 }
 
-.activities-cards h3{
+.activities-cards h3 {
     padding: 15px;
 }
 
@@ -357,18 +358,20 @@ footer section {
     padding: 5px;
 }
 
-footer li{
+footer li {
     margin-top: 20px;
 }
 
-footer ul{
+footer ul {
     padding-left: 0;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+
+@media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -401,7 +404,59 @@ footer ul{
     }
 }
 
+
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media screen and (max-width: 767.98px) {
+
+    body {
+        padding: 0px;
+    }
+
+    header {
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin : 30px;
+        display: flex;
+    }
+
+    .menu {
+        gap: 0;
+    }
+
+    .menu a {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+
+    .menu a:hover {
+        border-top: none !important;
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    .formulaire form {
+        width: 100%;
+    }
+
+    .formulaire form button {
+        display: none;
+    }
+
+    .formulaire form input[type="text"] {
+        flex-grow: 1;
+    }
+
+    .filters {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+
+    /*activités marseille : flex-direction: column*/
 }
