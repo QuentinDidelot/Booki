@@ -438,6 +438,9 @@ Small devices (phones, less than 768px)
         padding: 0px;
     }
 
+    .main-container{
+        padding: 0px;
+    }
 /********************* Header *******************/
 
     header {
@@ -503,17 +506,38 @@ Small devices (phones, less than 768px)
     .filters li {
         max-width: 150px;
         flex-basis: 50%;
+        border-radius: 25px;
+        padding: 10px;
     }
 
 
 
 /********************** Hebergements And Populaires ***********************/
 
-
-/********************** Hebergements ***********************/
+.hebergements-and-populaires{
+    flex-direction: column-reverse;
+    gap: 0;
+}
 
 
 /********************** Populaires ***********************/
+
+.populaires-section{
+    width: 100%;
+    min-width: 420px;
+    background-color: var(--filter-bg-color);
+    border-radius: 0px !important;
+    margin: 25px 0 25px 0;
+}
+
+.populaires-cards{
+    flex-direction: column;
+}
+
+.populaires-cards .card{
+    min-width: 425px;
+}
+/********************** Hebergements ***********************/
 
 
 /********************** Activité ***********************/
