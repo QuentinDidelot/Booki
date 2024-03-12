@@ -430,6 +430,9 @@ footer ul {
         margin-top: 50px;
     }
 
+    .populaires-section {
+        width: 100%;
+    }
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -626,15 +629,17 @@ Small devices (phones, less than 768px)
 
     .card {
         width: 400px;
+        height: 170px;
     }
 
     .card img {
-        height: 146px;
+        height: 171px;
     }
 
     .populaires-cards{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
 /********************** Hebergements ***********************/
