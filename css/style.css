@@ -244,7 +244,6 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 42px;
     margin: 30px 0;
-
 }
 
 .hebergements .card-content {
@@ -352,8 +351,13 @@ nav a:hover {
 }
 
 .activities-cards h3 {
-    padding: 0 10px 20px 20px;
-    margin: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 20px 19px;
+    gap: 10px;
+    margin: 0px;
 }
 
 
@@ -368,7 +372,7 @@ footer {
 
 
 footer section {
-    padding: 10px;
+    padding: 10px 10px 10px 30px;
     flex-grow: 1;
 }
 
@@ -389,15 +393,37 @@ footer ul {
 /************************************************
  Medium devices (tablets, less/equal than 1024px)
 *************************************************/
+@media screen and  (max-width: 1024px) and (min-width: 769px) {
 
-@media screen and (max-width: 1024px) {
+/********************** Filters ***********************/
+
+    .filters{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 25px 0 15px 0;
+        gap : 5px;
+    }
+
+/********************** Hebergements And Populaires ***********************/
+
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+/********************** Hebergements ************************/
+
+    #hebergements-section{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .hebergements {
         width: 100%;
     }
+
+/********************** Populaires **************************/
 
     .populaires {
         width: 100%;
@@ -421,6 +447,46 @@ footer ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+/********************** Activités ***************************/
+
+    .activities-section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .activities {
+        display: flex;
+        width: 100%;
+        height: 272px;
+        gap : 23px;
+    }
+
+    .activities-cards {
+        height: 281px;
+        max-height: 285px;
+        width: 180px;
+        min-height: 150px;
+    }
+
+    .activities-cards img{
+        height: 200px;
+    }
+
+    .activités-card h3 {
+        width: 75%;
+    }
+
+/********************** Footer ******************************/
+
+    footer{
+        width: 100%;
+        gap: 40px;
+        margin-top: 75px;
+    }
+
+
+
 }
 
 
@@ -429,7 +495,7 @@ footer ul {
 Small devices (phones, less than 768px) 
 ***************************************/
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
 
     body {
         padding: 0px;
@@ -550,21 +616,25 @@ Small devices (phones, less than 768px)
 
 /********************** Populaires ***********************/
 
-    .populaires-section {
+    .populaires-section{
         width: 100%;
-        min-width: 420px;
-        background-color: var(--filter-bg-color);
-        border-radius: 0px !important;
-        margin: 25px 0 25px 0;
-    }
-
-    .populaires-cards {
+        border-radius: 0 !important;
+        padding: 30px 20px;
+        display: flex;
         flex-direction: column;
     }
 
-    .populaires-cards .card {
-        width: 350px;
-        
+    .card {
+        width: 400px;
+    }
+
+    .card img {
+        height: 146px;
+    }
+
+    .populaires-cards{
+        display: flex;
+        flex-direction: column;
     }
 
 /********************** Hebergements ***********************/
@@ -584,8 +654,9 @@ Small devices (phones, less than 768px)
 
     .hebergements-cards {
         width: 420px;
-        height: 230px;
+        height: 245px;
     }
+    
     .hebergements-cards img {
         width: 100%;
         max-width: 406px;
@@ -601,6 +672,7 @@ Small devices (phones, less than 768px)
 
     .hebergements-cards .card-rating {
         margin-left: 10px;
+        margin-bottom: 50px;
     }
 
 /********************** Activité ***********************/
@@ -622,15 +694,21 @@ Small devices (phones, less than 768px)
     .activities-cards {
         display: flex;
         flex-direction: column;
-        height: 200px;
-        width: 350px;
+        width: 400px;
+        height: 225px;
     }
 
     .activities-cards img {
-        height: 145px;
-        width: 350px;
-        max-width: 350px
+        width: 100%;
+        max-width: 406px;
+        height: 175px;
+        object-fit: cover;
+        object-position: center;
     }
+
+    /* .activities-cards h3{
+        padding-top: 2px;
+    } */
 
 
 /********************** Footer ***********************/
