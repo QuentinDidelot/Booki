@@ -255,7 +255,7 @@ nav a:hover {
 .hebergements img {
     border-radius: 20px 20px 0 0;
     width: 95%;
-    height: 100px;
+    height: 115px;
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1 / 1;
@@ -265,7 +265,7 @@ nav a:hover {
 
 .hebergements-cards {
     background-color: white;
-    width: 242px;
+    width: 255px;
     height: 210px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -278,6 +278,9 @@ nav a:hover {
     padding-top: 5px;
 }
 
+.hebergements-cards .card-title {
+    margin: 10px 0 10px 0;
+}
 /****** Populaires ***********/
 
 .populaires-section {
@@ -470,6 +473,7 @@ footer ul {
     }
     .activities {
         display: flex;
+        justify-content: space-evenly;
         width: 100%;
         height: 272px;
         gap : 23px;
@@ -557,11 +561,13 @@ Small devices (phones, less than 768px)
 
     .formulaire h1 {
         margin-left: 30px;
+        padding-right: 25px;
     }
 
     .formulaire p {
         margin-left: 30px;
         padding-bottom: 15px;
+        padding-right: 25px;
     }
 
     .form {
@@ -570,7 +576,7 @@ Small devices (phones, less than 768px)
 
     .formulaire form {
         width: 100%;
-        max-width: 300px;;
+        max-width: 390px;;
         margin: 0;
     }
 
@@ -580,7 +586,7 @@ Small devices (phones, less than 768px)
 
     .formulaire form input[type="text"] {
         flex-grow: 1;
-        max-width: 200px;
+        max-width: 390px;
     }
 
     .fa-magnifying-glass {
@@ -683,6 +689,7 @@ Small devices (phones, less than 768px)
 
     .hebergements-cards .card-txt {
         margin-left: 10px;
+        margin-bottom: 7px;
     }
 
     .hebergements-cards .card-rating {
@@ -713,6 +720,10 @@ Small devices (phones, less than 768px)
         height: 225px;
     }
 
+    .activities-cards h3 {
+        padding: 15px 19px;
+    }
+
     .activities-cards img {
         width: 100%;
         max-width: 406px;
@@ -721,9 +732,6 @@ Small devices (phones, less than 768px)
         object-position: center;
     }
 
-    /* .activities-cards h3{
-        padding-top: 2px;
-    } */
 
 
 /********************** Footer ***********************/
