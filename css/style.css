@@ -127,7 +127,7 @@ nav a:hover {
     width: 45px;
 }
 
-.formulaire form button{
+.formulaire form button {
 
     background-color: var(--main-color);
     color: white;
@@ -157,7 +157,7 @@ nav a:hover {
     border: none;
 }
 
-.formulaire form input:focus{
+.formulaire form input:focus {
     outline: none;
 }
 
@@ -426,7 +426,7 @@ footer ul {
 
 /********************** Hebergements ************************/
 
-    #hebergements-section{
+    #hebergements-section {
         width: 100%;
         margin-bottom: 30px;
     }
@@ -468,7 +468,7 @@ footer ul {
 
 /********************** Activités ***************************/
 
-    .activities-section{
+    .activities-section {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -503,11 +503,7 @@ footer ul {
         gap: 40px;
         margin-top: 75px;
     }
-
-
-
 }
-
 
 
 /**************************************
@@ -555,7 +551,8 @@ Small devices (phones, less than 768px)
     }
 
 /********************** Form *********************/
-    section.formulaire{
+
+    section.formulaire {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -637,7 +634,7 @@ Small devices (phones, less than 768px)
 
 /********************** Populaires ***********************/
 
-    .populaires-section{
+    .populaires-section {
         width: 100%;
         border-radius: 0 !important;
         padding: 30px 20px;
@@ -654,7 +651,7 @@ Small devices (phones, less than 768px)
         height: 171px;
     }
 
-    .populaires-cards{
+    .populaires-cards {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -701,7 +698,7 @@ Small devices (phones, less than 768px)
 
 /********************** Activité ***********************/
 
-    #activities-section h2{
+    #activities-section h2 {
         padding-left: 15px;
     }
 
@@ -738,7 +735,7 @@ Small devices (phones, less than 768px)
 
 /********************** Footer ***********************/
 
-    footer{
+    footer {
         flex-direction: column;
     }
 
