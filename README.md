@@ -10,7 +10,7 @@ L'objectif de ce projet est d'intégrer la maquette d'un site web en utilisant u
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/ton-utilisateur/booki.git
+   git clone https://github.com/QuentinDidelot/Booki.git
 2. **Ouvrir le projet avec votre IDE préféré**
 3. Lancer l'affichage de la page en ouvrant  ```index.html ``` dans un navigateur.
 
